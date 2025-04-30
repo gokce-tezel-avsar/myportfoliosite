@@ -13,9 +13,9 @@ import {
     Col,
     Row
   } from "reactstrap";
-  import projects1 from "../assets/projects1.png"
-  import projects2 from "../assets/projects2.png"
-  import projects3 from "../assets/projects3.png"
+  import projects1 from "../assets/projects/projects1.png"
+  import projects2 from "../assets/projects/projects2.png"
+  import projects3 from "../assets/projects/projects3.png"
   
   const projectData = [
     {
@@ -40,7 +40,7 @@ import {
   
   export default function Projects() {
     return (
-      <Card id="projects" className="border-none">
+      <Card id="projects" className="border-none  text-[#1f2937]">
         <CardTitle tag="h1" className="mb-5">Projects</CardTitle>
         <Row className="g-4">
           {projectData.map((project, index) => (

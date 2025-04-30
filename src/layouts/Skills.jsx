@@ -29,23 +29,21 @@ import {
     return (
       <Card
         id="skills"
-        className="flex flex-col border-none "
+        className="flex flex-col border-none mx-[4rem] "
     
       >
-        <CardGroup className="border-none p-[0]">
+        <CardGroup className="border-none p-[2rem] text-[#1f2937]">
           <CardTitle tag="h1">Skills</CardTitle>
         </CardGroup>
   
-        <CardGroup>
+        <CardGroup className="flex flex-row ">
           {skills.map((skill, index) => (
-            <Card key={index} className="border-none h-100">
-              <CardSubtitle
-                tag="h2"
-                style={{ paddingBlock: "1rem", color: "#443cca" }}
+            <Card key={index} className="border-none h-100 px-[2rem]">
+              <h2 style={{ paddingBlock: "1rem", color: "#443cca" }}
               >
                 {skill.title}
-              </CardSubtitle>
-              <CardText>{skill.description}</CardText>
+              </h2>
+              <p className="text-muted">{skill.description}</p>
             </Card>
           ))}
         </CardGroup>

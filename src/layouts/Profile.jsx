@@ -11,7 +11,7 @@ import {
   export default function Profile(){
       return (
     <CardGroup className="flex">
-          <CardTitle className="mb-[2rem]"  tag="h1">Profile</CardTitle>
+          <CardTitle className="mb-[2rem]  text-[#1f2937]"  tag="h1">Profile</CardTitle>
           <CardBody className="flex flex-row">
             <CardBody className="flex flex-col">
             <CardSubtitle style={{ paddingBlock: "1rem", color: "#443cca"}} tag="h2">Profile</CardSubtitle>

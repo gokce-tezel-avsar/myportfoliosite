@@ -4,8 +4,9 @@
 
 :root{
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 28px;
     font-weight: 400;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -15,3 +16,30 @@
 body {
     margin: 0;
 }
+.hero-image{ 
+    width: 26rem;
+    height: 20rem
+}
+.btn-darkmode{
+    color:#BAB2e7;
+    background-color: #383838;
+    border-color: #BAB2e7;
+  }
+  
+  .btn-hire-header{
+    color:#443cca;
+    background-color: white;
+    border-color: #443cca;
+    border-radius: 0.3rem;
+    border: solid 1px;
+    padding: 0.5rem 1.5rem;
+  
+  }
+  .btn-hire-darkmode{
+    color:#0000;
+    background-color: #f9f9f9;
+    border-color:#f9f9f9;
+  }
+  .text-muted{
+    color:#6b7280;
+  }

@@ -1,13 +1,13 @@
 import React from "react";
-import { NavLink, Nav, Button, Container } from "reactstrap"
 export default function HeaderNav(){
     return(
-    <>
-      <div className="flex flex-row justify-end">
-     <NavLink className="px-4" href="#skills">Skills</NavLink>
-    <NavLink href="#projects">Projects</NavLink>
-    <Button className="bg-white border-[#3730A3] rounded-md text-[#3730A3]">Hire Me</Button>
-    </div>
-    </>
+      <header className="flex justify-end mx-[4rem] mt-[2rem]">
+      <nav className="px-[3rem] ">
+     <a className="px-[4rem] text-[#6b7280] no-underline " href="#skills">Skills</a>
+     <a className="pr-[4rem] text-[#6b7280] no-underline" href="#projects">Projects</a>
+   
+       <button className="btn-hire-header ">Hire Me</button>
+       </nav>
+       </header>
     )
 }

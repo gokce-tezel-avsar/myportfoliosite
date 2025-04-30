@@ -3,22 +3,26 @@
 @tailwind utilities;
 
 :root{
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: system-ui, Inter, Avenir, Helvetica, Arial, sans-serif;
     line-height: 28px;
     font-weight: 400;
     font-size: 18px;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+  
 }
-
-
 body {
     margin: 0;
 }
 .hero-image{ 
-    width: 26rem;
+    width: 28rem;
     height: 20rem
+}
+.hero-title{
+  font-size: 3rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .btn-darkmode{
     color:#BAB2e7;
@@ -43,3 +47,4 @@ body {
   .text-muted{
     color:#6b7280;
   }
+  

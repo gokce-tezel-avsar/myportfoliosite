@@ -1,42 +1,38 @@
 import React from "react";
-import {
-    Card,
-    CardText,
-    CardTitle,
-    CardSubtitle,
-    CardGroup,
-    CardBody
-  } from "reactstrap";
+
   
   export default function Profile(){
       return (
-    <CardGroup className="flex">
-          <CardTitle className="mb-[2rem]  text-[#1f2937]"  tag="h1">Profile</CardTitle>
-          <CardBody className="flex flex-row">
-            <CardBody className="flex flex-col">
-            <CardSubtitle style={{ paddingBlock: "1rem", color: "#443cca"}} tag="h2">Profile</CardSubtitle>
-            <Card className="flex flex-row border-none ">
-  <CardGroup className="flex flex-col">   
-      <CardText><strong>Doğum tarihi</strong></CardText>
-      <CardText><strong>İkamet Şehri</strong> </CardText>
-      <CardText><strong>Eğitim Durumu</strong></CardText> 
-      <CardText><strong>Tercih Ettiği Rol</strong> </CardText> 
-    </CardGroup> 
-  <CardGroup className="flex flex-col">
-     <CardText> 08.08.1997</CardText>
-     <CardText> Kırklareli</CardText>
-     <CardText>Trakya Üniversitesi Tıp Fakültesi, 2022</CardText>
-     <CardText>Frontend, UI</CardText>
-  </CardGroup>
-  </Card>
-              </CardBody>
+        <>
+           
+        <h1 className="mb-[2rem] mx-[6rem] pt-[2rem] text-[#1f2937]">Profile</h1>
+  <main className="flex flex-row w-full ">
+         
+         
+  <article className="flex flex-col mx-[6rem]  w-3/4">
+      <h2 className=" text-[#443cca]" >Profile</h2>
+      <article className="flex flex-row border-none ">
+      <form className="flex flex-col w-[10em] py-[2rem] pt-[0]">   
+      <p><strong>Doğum tarihi</strong></p>
+      <p><strong>İkamet Şehri</strong> </p>
+      <p><strong>Eğitim Durumu</strong></p> 
+      <p className="py-[1.6rem]"><strong>Tercih Ettiği Rol</strong> </p> 
+    </form> 
+  <form className="flex flex-col py-[2rem] pt-[0] ">
+     <p> 08.08.1997</p>
+     <p> Kırklareli</p>
+     <p>Trakya Üniversitesi Tıp Fakültesi,<br/>2022</p>
+     <p>Frontend, UI</p>
+  </form>
+  </article>
+  </article>
   
-       <CardBody className="flex flex-col">
-  
-              <CardSubtitle style={{ paddingBlock: "1rem", color: "#443cca"}} tag="h2">About Me</CardSubtitle>
-              <CardText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores officiis facilis inventore esse, ullam dolorum ducimus, repellendus atque adipisci culpa magni.</CardText>
-              </CardBody>
-          </CardBody>
-          </CardGroup>
+       <article className="flex flex-col mr-[5rem]">
+              <h2 className="text-[#443cca]">About Me</h2>
+              <p className="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores officiis facilis inventore esse, ullam dolorum ducimus, repellendus atque adipisci culpa magni.</p>
+              </article>
+        
+          </main>
+          </>
       )
   }

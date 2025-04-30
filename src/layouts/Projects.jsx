@@ -40,8 +40,8 @@ import {
   
   export default function Projects() {
     return (
-      <Card id="projects" className="border-none  text-[#1f2937]">
-        <CardTitle tag="h1" className="mb-5">Projects</CardTitle>
+      <main id="projects" className="border-none  text-[#1f2937]">
+        <h1 className="mb-5">Projects</h1>
         <Row className="g-4">
           {projectData.map((project, index) => (
             <Col md="4" key={index}>
@@ -89,6 +89,6 @@ import {
             </Col>
           ))}
         </Row>
-      </Card>
+      </main>
     );
   } 

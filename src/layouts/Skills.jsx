@@ -1,11 +1,4 @@
 import React from "react";
-import {
-    Card,
-    CardText,
-    CardTitle,
-    CardSubtitle,
-    CardGroup,
-  } from "reactstrap";
   
   const skills = [
     {
@@ -27,27 +20,25 @@ import {
   
   export default function Skills() {
     return (
-      <Card
+      <main
         id="skills"
-        className="flex flex-col border-none mx-[4rem] "
-    
-      >
-        <CardGroup className="border-none p-[2rem] text-[#1f2937]">
-          <CardTitle tag="h1">Skills</CardTitle>
-        </CardGroup>
+        className="flex flex-col border-none mx-[4rem]">
+        <h1 className="px-[2rem] pt-[2rem] pb-[0] text-[#1f2937]">
+        Skills</h1>
+        
   
-        <CardGroup className="flex flex-row ">
+        <article className="flex flex-row ">
           {skills.map((skill, index) => (
-            <Card key={index} className="border-none h-100 px-[2rem]">
+            <card key={index} className="border-none mx-[2rem] pr-[1rem]">
               <h2 style={{ paddingBlock: "1rem", color: "#443cca" }}
               >
                 {skill.title}
               </h2>
               <p className="text-muted">{skill.description}</p>
-            </Card>
+            </card>
           ))}
-        </CardGroup>
-      </Card>
+        </article>
+      </main>
     );
   }
   

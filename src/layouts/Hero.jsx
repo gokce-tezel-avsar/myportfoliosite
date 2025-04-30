@@ -1,47 +1,30 @@
 import React from "react";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardImg,
-  CardText,
-  CardTitle,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
-
 import hero from "../assets/hero.png";
 
 export default function Hero() {
   return (
-    <Card id="hero" className="flex justify-end mx-[2rem] mt-[2rem]">
-          <CardBody className="px-[4rem] ">
-            <h1 className="fw-bold text-[4rem] text-[#1f2937]">
+    <main id="hero" className="flex flex-row justify-between mx-[5rem] mt-[2rem]">
+            <form className="flex flex-col ml-[1rem]">
+            <h1 className="text-[4rem] fw-bold flex h-auto text-[#1f2937] mb-[0]">
               Creative thinker
             </h1>
-            <h1 className="fw-bold text-[4rem] text-[#1f2937]">
-              Minimalism lover
+            <h1 className="text-[4rem] fw-bold flex h-auto text-[#1f2937]">
+             Minimalism lover
             </h1>
-            <text className="text-muted">
+          
+            <text className="text-muted text-balance max-w-32  ">
               Hi, I'm Gökçe. I'm a full-stack developer. If you are looking for a
               developer who can craft solid and scalable frontend products with great
               user experiences, let's shake hands with me.
             </text>
-            <div className="d-flex gap-3 mt-4">
-             
-            </div>
-</CardBody>
-
-<CardBody className="mr-[5rem] ml-[1rem]">
-
+            </form>
+  
             <img 
             src={hero}
             alt="Hero"
-            className="hero-image rounded-[1rem]"
-           
+            className="hero-image  rounded-[1rem] ml-[1rem] mr-[2rem]"
           />
-          </CardBody>
-    </Card>
+          
+    </main>
   );
 }

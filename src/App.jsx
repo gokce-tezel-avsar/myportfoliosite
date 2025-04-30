@@ -1,4 +1,6 @@
 import { Redirect, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min'
+import Home from './pages/Home'
+import Hire from './pages/Hire'
 
 function App() {
 

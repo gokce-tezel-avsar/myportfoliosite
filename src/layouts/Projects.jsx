@@ -1,18 +1,5 @@
 import React from "react";
-import {
-    Card,
-    CardGroup,
-    CardImg,
-    CardLink,
-    CardText,
-    CardTitle,
-    ListGroupItem,
-    ListGroup,
-    CardSubtitle,
-    CardBody,
-    Col,
-    Row
-  } from "reactstrap";
+
   import projects1 from "../assets/projects/projects1.png"
   import projects2 from "../assets/projects/projects2.png"
   import projects3 from "../assets/projects/projects3.png"
@@ -40,55 +27,49 @@ import {
   
   export default function Projects() {
     return (
-      <main id="projects" className="border-none  text-[#1f2937]">
+      <main id="projects" className="border-none ml-[6rem] mr-[5rem] flex flex-col text-[#1f2937]">
         <h1 className="mb-5">Projects</h1>
-        <Row className="g-4">
+       <article className="flex flex-row justify-between my-[2rem]">
           {projectData.map((project, index) => (
-            <Col md="4" key={index}>
-              <Card className="h-100 border-none p-3">
-                <CardImg
+           
+              <article className="flex flex-col border-none pl-[0] px-[2rem]">
+                <img
                   src={project.img}
                   alt={project.title}
-                  style={{ height: "200px", objectFit: "cover", width: "100%", }}
-                  className="mb-3"
+                  className="mb-3 h-[11rem] w-[18rem]"
                 />
-                <CardSubtitle
-                  tag="h2"
-                  className="text-2xl font-semibold"
-                  style={{ paddingBlock: "1rem", color: "#443cca" }}
-                >
+                <h2
+                  className="text-2xl font-semibold text-[#443cca]"
+          >
                   {project.title}
-                </CardSubtitle>
-                <CardBody style={{ paddingInline: "0" }}>
-                  <CardText className="text-sm text-gray-700 text-justify">
+                </h2>
+                <section className=" h-[11rem] w-[18rem] ">
+                  <p className="text-sm text-muted text-justify">
                     {project.description}
-                  </CardText>
-                  <ListGroup className="flex flex-row gap-2" style={{ marginBlock: "1rem" }}>
+                  </p>
+                  <form className="flex flex-row " >
                     {project.tags.map((tag, i) => (
-                      <ListGroupItem
+                      <button
+                      type="button"
                         key={i}
-                        className="text-sm"
-                        style={{
-                          border: "solid 1px",
-                          borderRadius:"0.5rem",
-                          color: "#443cca",
-                          borderColor: "#443cca",
-                          padding: "0.5rem 1.5rem"
-                        }}
+                        className="text-sm text-[#443cca] border-[#443cca] rounded-[0.3rem] border-solid border-[1px] py-[0.4rem] px-[1.2rem]
+                          "
                       >
                         {tag}
-                      </ListGroupItem>
+                
+                      </button>
                     ))}
-                  </ListGroup>
-                  <div className="flex flex-row gap-4">
-                    <CardLink href="https://github.com/gokce-tezel-avsar" style={{ color: "#443cca" }}>Github</CardLink>
-                    <CardLink href="#hero" style={{ color: "#443cca" }}>View Site</CardLink>
-                  </div>
-                </CardBody>
-              </Card>
-            </Col>
+                  </form>
+                  <nav className="flex flex-row gap-4 justify-between">
+                    <a className="text-[#443cca]" href="https://github.com/gokce-tezel-avsar">Github</a>
+
+                    <a className="text-[#443cca] "  href="#hero">View Site</a>
+                  </nav>
+                </section>
+              </article>
+            
           ))}
-        </Row>
+     </article>
       </main>
     );
   } 

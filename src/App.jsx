@@ -2,11 +2,14 @@ import { Redirect, Route, Switch } from 'react-router-dom/cjs/react-router-dom.m
 import Home from './pages/Home'
 import Hire from './pages/Hire'
 
+
 function App() {
 
 
   return (
     <>
+    
+    
     <Switch>
       <Route exact path="/">
       <Redirect to="/home" />

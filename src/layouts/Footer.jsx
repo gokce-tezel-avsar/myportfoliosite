@@ -1,25 +1,19 @@
 import React from "react"; 
-import {
-    CardTitle,
-    CardGroup,
-    Nav,
-    Card,
-    CardLink
-  } from "reactstrap";
 export default function Footer (){ 
-    return (
-<Card className="bg-[#F9f9f9] px-[6rem] py-[6rem]">
-<CardGroup >
-<CardTitle tag="h1" className="">Let's work together on your next products.</CardTitle>
-</CardGroup>
-<Nav className="flex flex-row  ">
-    <CardLink className="no-underline"  href="mailto:gokcetezelavsar@gmail.com">gokcetezelavsar@gmail.com</CardLink>
-    <CardLink className="no-underline" href="URL">Personal Blog</CardLink>
-    <CardLink className="no-underline" href="URL">Github</CardLink>
-    <CardLink className="no-underline" href="URL">LinkedIn</CardLink>
-  
-    </Nav>
- </Card>
+return (
+<footer className="bg-[#F9f9f9] px-[6rem] py-[4rem] mt-[6rem]">
+<div >
+<h1 tag="h1" className="w-[]">Let's work together on your next products.</h1>
+</div>
+<nav className="flex flex-row justify-between mr-[1rem]">
+    <a className=""  href="mailto:gokcetezelavsar@gmail.com">gokcetezelavsar@gmail.com</a>
+    <div className="flex flex-row">
+    <a className="no-underline mr-[1rem]" href="https://myportfoliosite-j08nws1af-gokce-tezel-avsars-projects.vercel.app/">Personal Blog</a>
+    <a className="no-underline mr-[1rem] text-[#56ac6c]" href="https://github.com/gokce-tezel-avsar">Github</a>
+    <a className="no-underline text-[#2977b5]" href="https://linkedin.com/in/gökçe-tezel-avşar-25756234a">LinkedIn</a>
+    </div>
+    </nav>
+ </footer>
 
 )}
 

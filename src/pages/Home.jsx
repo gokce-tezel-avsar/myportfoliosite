@@ -1,5 +1,3 @@
-import { faGithub} from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Header from "../layouts/Header"
 import HeaderNav from "../layouts/HeaderNav"
 import Profile from "../layouts/Profile"

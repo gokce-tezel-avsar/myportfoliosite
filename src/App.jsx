@@ -1,26 +1,18 @@
-import { Redirect, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min'
-import Home from './pages/Home'
-import Hire from './pages/Hire'
+import DarkModeContextProvider from './context/DarkModeContext';
+import LanguageContextProvider from "./context/LanguageContext"
+import AppContainer from "./AppContainer"
 
 
 function App() {
 
-
   return (
     <>
-    
-    
-    <Switch>
-      <Route exact path="/">
-      <Redirect to="/home" />
-      </Route>
-      <Route path='/home'>
-      <Home/>
-      </Route>
-      <Route path='/hire'>
-      <Hire />
-      </Route>
-      </Switch></>
+       <DarkModeContextProvider>
+       <LanguageContextProvider>
+       <AppContainer />
+        </LanguageContextProvider>
+        </DarkModeContextProvider>
+        </>
   )
 }
 

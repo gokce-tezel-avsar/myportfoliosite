@@ -5,10 +5,11 @@ import projects3 from "../assets/projects/projects3.png";
 export const turkishWords = {
   mode: {
     darkmode: "KARANLIK MOD",
-    lightmode: "AYDINLIK MOD"
+    lightmode: "AYDINLIK MOD",
+    language: "ENGLISH"
   },
   translate: "SWITCH TO ",
-  language: "ENGLISH",
+ 
   mail: "gokcetezelavsar@gmail.com",
   socialGit:"Github",
   socialLink: "LinkedIn",

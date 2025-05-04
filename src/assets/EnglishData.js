@@ -4,10 +4,12 @@ import projects3 from "../assets/projects/projects3.png"
 export const englishWords = {
     mode: {
         darkmode: "DARK MODE",
-        lightmode: "LIGHT MODE"
+        lightmode: "LIGHT MODE",
+        language: "TÜRKÇE",
+        
     },
     translate: "'YE GEÇ",
-    language: "TÜRKÇE",
+   
     mail: "gokcetezelavsar@gmail.com",
     socialGit:"Github",
     socialLink: "LinkedIn",

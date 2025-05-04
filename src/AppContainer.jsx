@@ -11,15 +11,14 @@ import { LanguageContext } from "./context/LanguageContext";
 import React from "react"; 
 
 export default function AppContainer(){
-    const { words } = useContext(LanguageContext);
-    const { darkMode } = useContext(DarkModeContext);
+    const { darkMode,handleDarkModeChange } = useContext(DarkModeContext);
      return(
         <> 
          
-        <div className={`bg-[#ffffff] ${
-        darkMode ? " bg-[#2a262b] " : ""
+        <div onClick={() => handleDarkModeChange} className={`bg-[#ffffff] ${
+        darkMode ? "dark:bg-[#2a262b] text-[#AECBBF] title-[]" : ""
       }`} >
-                  <Header/>
+                <Header/>
                   <HeaderNav/>
                   <Hero />
                   <Skills/>

@@ -7,7 +7,7 @@ export default function Footer (){
   const { darkMode } = useContext(DarkModeContext);
   const { words } = useContext(LanguageContext);
 return (
-<footer className={`bg-[#F9f9f9] px-[6rem] py-[4rem] mt-[6rem] ${darkMode ? "dark:bg-[#141414] text-[#AEBCCF]": "" }`}>
+<footer className={`bg-[#F9f9f9] px-[6rem] py-[4rem] ${darkMode ? "dark:bg-[#141414] text-[#AEBCCF]": "" }`}>
 <div >
 <h1 tag="h1" className="w-[28rem] text-[2.5rem] leading-[3rem]">{words.footerText}</h1>
 </div>

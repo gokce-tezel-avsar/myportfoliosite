@@ -9,19 +9,24 @@ import { useContext } from "react";
     return (
       <main
         id="skills"
-        className="flex flex-col border-none mx-[4rem]">
-        <h1 className="px-[2rem] pt-[2rem] pb-[0] text-[#1f2937]">
+        className={`flex flex-col border-none ml-[6rem] mr-[7rem] text-[#777777]  ${darkMode ? "dark:text-[#ffffff] " : ""}`}>
+
+
+        <h1 className={`pt-[2rem] pb-[0] text-[#1f2937] ${darkMode ? "dark:text-[#aebccf]": ""}`}>
+
+
        {words.skillTitle}</h1>
         
   
-        <article className="flex flex-row ">
+        <article className="flex flex-row  justify-between">
           {words.skills.map((skill, index) => (
-            <div key={index} className="border-none mx-[2rem] ">
-              <h2 className="text-[#443cca] py-[1rem]"
+            <div key={index} className="h-[11rem] w-[18rem] ">
+              <h2 className={`text-[#443cca] py-[1rem] ${darkMode ? "dark:text-[#b7aafd]" : ""}`}
               >
                 {skill.title}
               </h2>
-              <p className="text-muted">{skill.description}</p>
+
+              <p className={`text-sm text-[#6b7280] text-baseline py-[1rem] ${darkMode ? "dark:text-[#ffffff]" : ""}`}  >{skill.description}</p>
             </div>
           ))}
         </article>
